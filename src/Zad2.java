@@ -12,11 +12,12 @@ public class Zad2 {
         float heightMilewski;
         float weightMilewski;
         float BMI;
-        System.out.println("Podaj wzrost w metrach ");
-        heightMilewski = Float.parseFloat(br.readLine());
+        System.out.println("Podaj wzrost w centymetrach ");
+        heightMilewski = (Float.parseFloat(br.readLine())/100);
         System.out.println("Podaj wagę w kg ");
         weightMilewski = Float.parseFloat(br.readLine());
         BMI = (float)(weightMilewski/(Math.pow(heightMilewski,2)));
+
         if(BMI < 16.00)
         {
             System.out.println("Wygłodzenie " + "BMI Wynosi "+String.format("%.2f",BMI));
@@ -57,5 +58,6 @@ public class Zad2 {
         {
             System.out.println("otyłość III stopnia "+ "BMI Wynosi "+String.format("%.2f",BMI));
         }
+
     }
 }

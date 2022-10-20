@@ -16,6 +16,9 @@ public class Zad3 {
         System.out.println("Obliczanie Pierwiastków równania kwadratowego");
         System.out.println("Wprowadź a");
         a = Float.parseFloat(br.readLine());
+        if(a==0){
+            System.out.println("Parametr a nie może się równać 0");
+            }else{
         System.out.println("Wprowadź b");
         b = Float.parseFloat(br.readLine());
         System.out.println("Wprowadź c");
@@ -30,18 +33,7 @@ public class Zad3 {
         }else
             amountOfRoots = 0;
 
-
-
-        switch ((int)a)
-        {
-            case 0:
-            {
-                System.out.println("Parametr a nie może się równać 0");
-                break;
-            }
-            default:
-            {
-                System.out.println("Obliczanie równania");
+            System.out.println("Obliczanie równania");
                 switch ((int) amountOfRoots)
                 {
                     case 0:
@@ -68,10 +60,11 @@ public class Zad3 {
                     }
 
                 }
+            }
 
             }
 
         }
 
-    }
-}
+
+
